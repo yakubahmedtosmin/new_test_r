@@ -1,0 +1,12 @@
+x=c(58.5,64.1,61.6,62.6,62.7,58.2,50.2,55.3,56.7,56.8,49.2,50.3,54.9,46.7,61.3,55.0,52.8,56.6,62.3,43.4)
+xbar=mean(x)
+s=sd(x)
+s
+lowci=xbar-(qt(1-(.1/2),19)*s/sqrt(20))
+highci=xbar+(qt(1-(.1/2),19)*s/sqrt(20))
+print(lowci)
+print(highci)
+lowci1=xbar-(qt(1-(.05/2),19)*s/sqrt(20))
+highci1=xbar+(qt(1-(.05/2),19)*s/sqrt(20))
+print(lowci1)
+print(highci1)
